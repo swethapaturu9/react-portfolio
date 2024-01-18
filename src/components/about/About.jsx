@@ -14,8 +14,10 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="">
-            </img>
+           <img src={ME} alt=""></img>
+          </div>
+          <div className="image-tag">
+              <p> "I have only two moods" </p>
           </div>
         </div>
         <div className="about__me-content">
@@ -37,7 +39,7 @@ const About = () => {
             </article>
           </div>
           <p>
-          I'm  an enthusiastic and highly motivated Software Engineer with one year of experience in Cloud Native development. With a strong foundation in Java, Python, C++, and JavaScript, I am constantly seeking opportunities to expand my knowledge and skills. I have a deep passion for creating innovative solutions and thrive in dynamic and fast-paced environments.
+          I'm  an enthusiastic (most of the times) and highly motivated Software Engineer with one year of experience in Cloud Native development. With a strong foundation in Java, Python, C++, and JavaScript, I am constantly seeking opportunities to expand my knowledge and skills. I have a deep passion for creating innovative solutions and thrive in dynamic and fast-paced environments.
 
 If you're looking for a dedicated and adaptable team member who is willing to go the extra mile, I would be thrilled to connect and explore potential collaborations. Let's embark on a journey of learning and success together.
 

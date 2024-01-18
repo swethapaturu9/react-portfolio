@@ -1,7 +1,7 @@
 import React from 'react'
 import './projects.css'
-import IMG1 from '../../assets/darkness.webp'
-import IMG2 from '../../assets/darkness.webp'
+import IMG1 from '../../assets/networking.png'
+import IMG2 from '../../assets/workit.png'
 import IMG3 from '../../assets/darkness.webp'
 import IMG4 from '../../assets/darkness.webp'
 import IMG5 from '../../assets/darkness.webp'
@@ -12,7 +12,7 @@ const data = [
     id: 1,
     image: IMG1,
     title: "Project Title 1",
-    github: "https://github.com/swethapaturu9"
+    github: "https://github.com/swethapaturu9/AlumniNetworkSpringBoot"
   },
   {
     id: 2,
@@ -72,7 +72,7 @@ const Projects = () => {
                 </div>
                 <h3> {title} </h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className="btn" target='_blank'> Github </a>
+                  <a href={github} className="btn" target='_blank'> README </a>
                 </div>
               </article>
 

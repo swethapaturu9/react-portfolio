@@ -18,16 +18,16 @@
 
 
 .about__me-image {
-     margin-top: 3rem;
-     border-radius: 2rem;
-     overflow: hidden;
-     rotate: rotate(10deg);
-     transform: rotate(5deg);
-     transition: var(--transition);
+
+    margin-top: 3rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    rotate: rotate(10deg);
+    transform: rotate(5deg);
+    transition: var(--transition);
 
 
 }
-
 
 .about__me-image:hover {
     transform: rotate(0);
