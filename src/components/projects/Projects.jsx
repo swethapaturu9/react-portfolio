@@ -55,8 +55,8 @@ const data = [
 const Projects = () => {
   return (
     <section id="projects">
-      <h5> Projects</h5>
-      <h2> Portfolio </h2>
+      {/* <h5> Projects</h5>
+      <h2> Portfolio </h2> */}
 
       <div className="container portfolio__container">
         {
