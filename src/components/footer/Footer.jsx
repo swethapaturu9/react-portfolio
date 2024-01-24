@@ -15,9 +15,9 @@ const Footer = () => {
          <li><a href="#contact"> Contact </a> </li>
        </ul>
        <div className="footer__socials">
-       <a href="https://www.linkedin.com/in/swetha-paturu/" target="_blank"><BsLinkedin/></a>
-        <a href="https://github.com/swethapaturu9" target="_blank"><BsGithub/></a>
-        <a href="https://leetcode.com/swetha_paturu/" target="_blank"><SiLeetcode/></a>  
+       <a href="https://www.linkedin.com/in/swetha-paturu/" target="_blank" rel="noreferrer noopener"><BsLinkedin/></a>
+        <a href="https://github.com/swethapaturu9" target="_blank" rel="noreferrer noopener"><BsGithub/></a>
+        <a href="https://leetcode.com/swetha_paturu/" target="_blank" rel="noreferrer noopener"><SiLeetcode/></a>  
     </div>
      <div className="footer__copyright">
      <small> &copy; Swetha Paturu </small>

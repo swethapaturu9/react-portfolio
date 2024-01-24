@@ -72,7 +72,7 @@ const Projects = () => {
                 </div>
                 <h3> {title} </h3>
                 <div className="portfolio__item-cta">
-                  <a href={github} className="btn" target='_blank'> README </a>
+                  <a href={github} className="btn" target='_blank' rel="noreferrer noopener"> README </a>
                 </div>
               </article>
 
