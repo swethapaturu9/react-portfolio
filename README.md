@@ -1,4 +1,9 @@
 # Portfolio Website
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-Integrated-blue?style=for-the-badge)
+[![View My Portfolio](https://img.shields.io/badge/View%20Portfolio-blue?style=for-the-badge)](http://swecsye6225.me)
+
 
 ## Overview
 
