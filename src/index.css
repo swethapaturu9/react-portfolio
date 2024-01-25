@@ -87,6 +87,11 @@ section > h2 {
 
 }
 
+
+#projects {
+    margin-top: 22rem; 
+}
+
 .text-light {
     color: var(--color-light);
 
