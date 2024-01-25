@@ -1,52 +1,52 @@
 .experience__container {
-   display: grid;
-   grid-template-columns: 1fr 1fr ;
-   gap: 2rem; 
-
-
-}
-
-
-.experience__container > div {
-    background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-}
-
-.experience__container > div:hover {
-    background-color: transparent;
-    border-color: var(--color-primary-variant);
-    cursor: default;
-
-}
-
-
-.experience__container > div h3 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: var(--color-primary);
-
-}
-
-
-.experience__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
-
-}
-
-.experience__details {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .experience-card {
+    background: transparent;
+    border: 2px solid;/* Border in white color */
+    border-color: var(--color-primary-variant);
+    border-radius: 1rem;
+    color: var(--color-primary-variant);
+    padding: 20px;
+    text-align: center;
+    flex-basis: calc(50% - 1rem); /* Two cards in one row */
+    margin: 0.5rem;
+    transition: border-color 0.3s ease-in-out; 
+  }
+  
+  .experience--centered {
+    flex-basis: 100%; /* Centered card takes full width */
+    margin-top: 1rem; /* Space between the rows */
+  }
+  
+  .experience-card:hover {
+    border-color: white; /* Border color changes to white on hover */
+  }
 
+  ul {
+    list-style-type: disc !important;
+    padding-left: 20px;
+    color: var(--color-light);
+  }
+
+  ul li {
+    margin-bottom: 10px; /* Add space between list items for better readability */
+    text-align: left; /* Align text to the left */
+  }
+
+  .icons {
+    display: flex; /* Align icons in a row */
+    gap: 20px; /* Space between icons */
+    padding: 10px 0; /* Padding above and below the icon row */
+    margin-left: 1.5rem;
 }
 
-
-.experience__details-icon{
-    margin-top: 6px;
-    color: var(--color-primary)
-
-}
+.icon {
+    font-size: 2.5rem; /* Increase size of icons */
+    color:  var(--color-primary);
+   
+    
+} 
