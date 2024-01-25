@@ -1,0 +1,48 @@
+#projects {
+    padding: 2rem;
+    text-align: center;
+}
+
+.project-cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: stretch; /* Align items to stretch to fill the container */
+}
+
+.project-card {
+    width: calc(50% - 40px);
+    margin: 1rem;
+    display: flex; /* Make .project-card a flex container */
+    flex-direction: column; /* Stack children of .project-card vertically */
+    border-radius: 10px;
+    background-color: var(--color-bg-variant);
+    color: var(--color-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+    transition: transform 0.3s; /* Smooth transition for hover (optional) */
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    text-align: left;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.project-card h3 {
+    color: #fff;
+}
+
+.project-card .card-content .project-icons {
+    display: flex; /* Align icons in a row */
+    gap: 10px; /* Space between icons */
+    margin-bottom: 10px; /* Space between icons and title */
+    margin-top: 10px;
+    font-size: 2em;
+}
