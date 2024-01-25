@@ -1,10 +1,13 @@
 .about__container {
     display: grid;
-    grid-template-columns: 35% 50%;
-    gap: 15%;
+   
 
 }
 
+.about__me-content {
+    display: flex;
+    align-items: flex-start;
+  }
 
 .about__me {
   width: 100%;
@@ -17,25 +20,12 @@
 }
 
 
-.about__me-image {
-
-    margin-top: 3rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    rotate: rotate(10deg);
-    transform: rotate(5deg);
-    transition: var(--transition);
-
-
-}
-
-.about__me-image:hover {
-    transform: rotate(0);
-}
-
 .about__cards {
+    margin-top: 5rem;
+    margin-left: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    width: 30%;
     gap: 1.5rem;
 }
 
@@ -73,10 +63,41 @@
 
 }
 
+.about__details {
+    margin-top: 3.0rem;
+    width: 80%; 
+    display: flex;
+    flex-direction: column;
+    /* Your existing styles */
+  }
+
 .about__me-content p {
 
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 
 }
+  
+  .card__title {
+    
+    color: white;
+    margin-bottom: 5px; /* adjust as needed */
+    font-weight: bold; /* if you want the title to be bold */
+  }
+  
 
+  .about__icon_b {
+    margin-right: 20px; /* Space between icon and text */
+    vertical-align: middle; /* Align icon with text */
+    color: var(--color-primary);
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about__details p {
+    display: flex;
+    align-items: center; 
+    margin-bottom: 1px; 
+  }
+
+  

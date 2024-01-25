@@ -61,6 +61,10 @@ h1{
     font-size: 2.5rem;
 }
 
+h2{
+    font-size: 2rem;
+}
+
 #contact {
     margin-top: 30rem;
     height: 50vh; /* Adjust this value as needed */
