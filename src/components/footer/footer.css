@@ -1,4 +1,5 @@
 footer {
+    width: 100%;
     background: var(--color-primary);
     padding: 3rem 0;
     text-align: center;
@@ -52,3 +53,34 @@ footer a {
     margin-bottom: 4rem;
 }
 
+@media screen and (max-width: 768px) {
+    footer {
+        padding: 2rem 0; /* Reduce padding */
+        font-size: 0.8rem; /* Smaller font size */
+    }
+
+    .links, .footer__socials {
+        gap: 1.5rem; /* Reduce gap */
+    }
+
+    .footer__socials a {
+        padding: 0.7rem; /* Reduce padding for social icons */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .links, .footer__socials {
+        gap: 1rem; /* Further reduce gap */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Align items in the center */
+    }
+
+    .footer__socials a {
+        padding: 0.6rem; /* Even smaller padding for social icons */
+    }
+
+    .footer__socials, .links {
+        margin-bottom: 2rem; /* Reduce margin-bottom */
+    }
+}

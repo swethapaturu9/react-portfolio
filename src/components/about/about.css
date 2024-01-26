@@ -101,3 +101,58 @@
   }
 
   
+  @media screen and (max-width: 768px) {
+    .about__container {
+        /* Switch to a single column layout */
+        grid-template-columns: 1fr;
+    }
+    
+    .about__me, .about__cards {
+        /* Ensure elements take full width */
+        width: 100%;
+    }
+
+    .about__me-content {
+        /* Stack the elements vertically */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__me-content p {
+        /* Reduce font size and adjust margins for the paragraph */
+        font-size: 0.9rem;
+        margin: 1rem 0 1.6rem;
+    }
+
+    .about__cards {
+        /* Adjust margins and width for the cards */
+        margin-top: 2rem;
+        margin-left: 0;
+        width: auto;
+    }
+
+    .about__card {
+        /* Adjust font sizes and padding for the cards */
+        font-size: 0.9rem;
+        padding: 1rem;
+    }
+
+    .about__details {
+        /* Hide the details section */
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about__me-content p {
+        /* Further reduce the font size of the paragraph for very small screens */
+        font-size: 0.8rem;
+    }
+
+    .about__cards {
+        /* Further adjust the layout of the cards */
+        gap: 1rem;
+    }
+
+    /* Further adjustments as needed for very small screens */
+}

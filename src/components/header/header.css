@@ -62,3 +62,22 @@ header {
     bottom: 5rem;
     transform: rotate(90deg);
 }
+
+@media screen and (max-width: 480px) {
+    .me {
+        width: 15rem; 
+        height: 17rem; 
+        left: calc(50% - 7.5rem); 
+        margin-top: 1rem;
+    }
+
+    .scroll__down {
+        right: -1.5rem; 
+        bottom: 3.5rem;
+        font-size: 0.9em;
+    }
+
+    .header__socials {
+        left: 5px; 
+    }
+}

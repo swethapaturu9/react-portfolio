@@ -12,7 +12,7 @@ const Projects = () => {
             id: 1,
             title: 'DevOps & Cloud Infrastructure Orchestration',
             description: 'Created an automated DevOps pipeline with AWS and GitHub Actions, harnessing Pulumi and CloudWatch for streamlined, scalable infrastructure management',
-            repoLink: '#',
+            repoLink: 'https://github.com/csye6225-swetha',
             icons: [<FaAws key="aws-1" />, <SiGithubactions key="githubactions-1"/>, <SiPulumi key="pulumi-1"/>]
             
         },
@@ -20,7 +20,7 @@ const Projects = () => {
             id: 2,
             title: 'Serverless File Upload & Cloud Storage Integration',
             description: 'Engineered a seamless AWS to GCP file transfer system using AWS Lambda, automating uploads to optimize cross-platform cloud storage',
-            repoLink: '#',
+            repoLink: 'https://github.com/swethapaturu9/serverless',
             icons: [<SiAwslambda key="aws-2"/>, <FaPython key="python-2"/>, <SiGooglecloud key="gcp-2"/> ]
             
         },
@@ -28,7 +28,7 @@ const Projects = () => {
             id: 3,
             title: 'University Hiring Portal',
             description: 'Developed a secure, role-based university hiring portal with Spring Boot and Hibernate, optimizing backend processes for high efficiency',
-            repoLink: '#',
+            repoLink: 'https://github.com/swethapaturu9/AlumniNetworkSpringBoot',
             icons: [<BiLogoSpringBoot key="springboot-3"/>,  <DiMysql key="mysql-3" />]
            
         },
@@ -37,7 +37,7 @@ const Projects = () => {
           id: 4,
           title: 'WorkIt: Task-Management Application',
           description: 'Led the creation of WorkIt, a MERN-stack task management app, enhancing productivity through a user-centric design and robust backend integration',
-          repoLink: '#',
+          repoLink: 'https://github.com/swethapaturu9/WorkIt',
           icons: [<FaReact key="react-1"/>, <FaNode key="node-1"/>, <SiMongodb key="mongo-1" />, <SiJavascript  key="js-1"/>]
           
       },
@@ -62,7 +62,10 @@ const Projects = () => {
                   
                     <div key={project.id} className="project-card">
                         <div  className="card-content">
-                            <h3>{project.title}</h3>
+                            <h3>
+                                {/* Title as a link */}
+                                <a href={project.repoLink} target="_blank" rel="noopener noreferrer">{project.title}</a>
+                            </h3>
                             <p>{project.description}</p>
                             <div className="project-icons">
                             {project.icons && project.icons.map((icon) => (

@@ -46,3 +46,39 @@
     margin-top: 10px;
     font-size: 2em;
 }
+
+
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: calc(100% - 40px); /* Cards take full width minus margin */
+        margin: 1rem;
+    }
+
+    .project-card .card-content .project-icons {
+        font-size: 1.5em; /* Smaller icons on small screens */
+    }
+
+    .card-content {
+        padding: 15px; /* Smaller padding on small screens */
+    }
+
+    /* Adjust other font sizes, paddings or margins if needed */
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .project-card {
+        width: calc(100% - 20px); /* Cards take full width minus smaller margin */
+        margin: 0.5rem;
+    }
+
+    .project-card .card-content .project-icons {
+        font-size: 1.2em; /* Even smaller icons for very small screens */
+    }
+
+    .card-content {
+        padding: 10px; /* Even smaller padding on very small screens */
+    }
+
+    /* Adjust other font sizes, paddings or margins if needed */
+}
