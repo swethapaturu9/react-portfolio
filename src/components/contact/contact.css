@@ -1,7 +1,8 @@
 
 .container.contact__container {
    
-     display: grid;
+  
+    display: grid;
     
 }
 
@@ -25,8 +26,6 @@
 .contact__option-icon {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-   
-
     
    
 }
@@ -38,3 +37,8 @@
 
 
 
+@media screen and (max-width: 768px) {
+    .container.contact__container {
+        display: none; 
+    }
+}

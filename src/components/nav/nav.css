@@ -34,3 +34,8 @@ nav a.active {
      color: var(--color-light);
      
 }
+@media screen and (max-width: 768px) {
+    nav a[href="#contact"] {
+        display: none; 
+    }
+}

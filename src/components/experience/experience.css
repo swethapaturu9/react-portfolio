@@ -50,3 +50,43 @@
    
     
 } 
+
+
+@media screen and (max-width: 768px) {
+    .experience-card, .experience--centered {
+        flex-basis: 100%; /* Each card takes full width on medium screens */
+        margin: 0.5rem 0; /* Adjust margin for better spacing */
+    }
+
+    .icons {
+        gap: 15px; /* Reduce gap between icons */
+        margin-left: 1rem; /* Adjust left margin */
+    }
+
+    .icon {
+        font-size: 2rem; /* Reduce size of icons */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience-card {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .icons {
+        gap: 10px; 
+        margin-left: 0.5rem; /* Further adjust left margin */
+    }
+
+    .icon {
+        font-size: 1.5rem; 
+    }
+
+    ul {
+        padding-left: 15px; 
+    }
+    
+    ul li {
+        margin-bottom: 8px; 
+    }
+}
