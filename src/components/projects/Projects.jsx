@@ -71,6 +71,8 @@ const Projects = () => {
                             {project.icons && project.icons.map((icon) => (
                                     <span key={icon.key}>{icon}</span> // Use icon's key here
                                 ))}
+
+                                         <button onClick={() => window.open(project.repoLink, '_blank')} className="read-me-button">README</button> 
                                 </div>
                         </div>
                     </div>

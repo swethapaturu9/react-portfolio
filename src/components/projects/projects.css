@@ -65,7 +65,24 @@
     /* Adjust other font sizes, paddings or margins if needed */
 }
 
-/* Further adjustments for very small screens */
+
+.read-me-button {
+    font-size: 0.6em; /* Even smaller font size */
+    padding: 4px 8px; /* Reduced padding for a more compact look */
+    margin-left: auto; /* Pushes the button to the extreme right */
+    color: var(--color-primary); /* Primary color text */
+    background-color: transparent; /* Transparent background */
+    border: 2px solid var(--color-primary); /* Border with primary color */
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.read-me-button:hover {
+    background-color: var(--color-primary); /* Primary color background on hover */
+    color: #fff; /* White text color on hover */
+}
+  
 @media screen and (max-width: 480px) {
     .project-card {
         width: calc(100% - 20px); /* Cards take full width minus smaller margin */
@@ -80,5 +97,12 @@
         padding: 10px; /* Even smaller padding on very small screens */
     }
 
-    /* Adjust other font sizes, paddings or margins if needed */
+    .read-me-button {
+        font-size: 0.6em; /* Smallest font on small screens */
+        padding: 2px 4px; /* Smallest padding on small screens */
+    }
+
+
+
+    
 }
