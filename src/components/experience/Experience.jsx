@@ -25,6 +25,7 @@ const Experience = () => {
                   </li>
                   <li>Managed three Kubernetes clusters, with two on Google Cloud Platform and one on IBM Cloud, enhancing infrastructure scalability and reliability, leading to a 20% improvement in resource utilization efficiency.</li>
                   <li>Implemented infrastructure deployment using Terraform on both GCP and IBM Cloud platforms, streamlining setup processes and reducing deployment times by approximately 35%.</li>
+                  <li>My expertise in Kubernetes is further endorsed by my <strong>Certified Kubernetes Application Developer (CKAD) certification</strong>, demonstrating advanced skills in designing and developing applications for Kubernetes - <a href="https://www.credly.com/badges/8d90228d-ed66-4baa-ad20-23b71482ff5c/linked_in?t=rz8e2y" target="_blank" rel="noopener noreferrer">Credential link</a></li>
                 </ul>
                 </p>
                 <div className="icons">
