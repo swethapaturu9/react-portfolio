@@ -41,11 +41,7 @@ const Footer = () => {
     <div className="footer__views">
       <small> Views: {views}</small>
     </div>
-      
-     <div className="footer__copyright">
-     <small> &copy; Swetha Paturu </small>
-
-     </div>
+  
     </footer>
 
     
