@@ -45,7 +45,7 @@ const Footer = () => {
       
      <div className="footer__copyright">
      <small> &copy; Swetha Paturu </small>
-
+     </div>
   
     </footer>
 
