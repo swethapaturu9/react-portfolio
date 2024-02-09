@@ -41,8 +41,7 @@ const Footer = () => {
     <div className="footer__views">
       <small> Views: {views}</small>
     </div>
-    
-     </div>
+  
     </footer>
 
     
