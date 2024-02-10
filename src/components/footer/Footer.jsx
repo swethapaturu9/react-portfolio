@@ -10,7 +10,9 @@ const Footer = () => {
 
   useEffect(() => {
   
-    const lambdaURL = 'https://eg2yyqmmhms6mptmer2op4bdwa0xzjqv.lambda-url.us-east-1.on.aws/';
+    const lambdaURL = 'https://nqlrh44qdtdqpzjuvrz4wuvvwu0kltyu.lambda-url.us-east-1.on.aws/';
+
+    console.log(fetch(lambdaURL))
 
     fetch(lambdaURL)
       .then(response => response.json())
