@@ -11,7 +11,7 @@ const Footer = () => {
   useEffect(() => {
   
     const lambdaURL = 'https://nqlrh44qdtdqpzjuvrz4wuvvwu0kltyu.lambda-url.us-east-1.on.aws/';
-
+    
     console.log(fetch(lambdaURL))
 
     fetch(lambdaURL)

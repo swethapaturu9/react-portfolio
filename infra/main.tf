@@ -73,5 +73,6 @@ resource "aws_lambda_function_url" "lambda_url" {
     allow_headers     = ["date", "keep-alive"]
     expose_headers    = ["keep-alive", "date"]
     max_age           = 86400
+
   }
 }
