@@ -67,12 +67,11 @@ resource "aws_lambda_function_url" "lambda_url" {
   authorization_type = "NONE"
 
   cors {
-    allow_credentials = true
-    allow_origins     = ["*"]
-    allow_methods     = ["*"]
-    allow_headers     = ["date", "keep-alive"]
-    expose_headers    = ["keep-alive", "date"]
-    max_age           = 86400
-
+    allow_credentials = false 
+    allow_origins     = ["https://swecsye6225.me"] 
+    allow_methods     = ["GET", "POST"]  
+    allow_headers     = ["Content-Type", "X-Requested-With"]  
+    expose_headers    = ["Content-Length", "Content-Type"]  
+    max_age           = 86400  
   }
 }
