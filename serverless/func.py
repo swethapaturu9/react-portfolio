@@ -1,11 +1,18 @@
 
-
 import boto3
 import json
 
 def lambda_handler(event, context):
     dynamodb = boto3.resource('dynamodb')
     table = dynamodb.Table('PageVisitors')
+
+
+    cors_headers = {
+        'Access-Control-Allow-Origin': 'https://swecsye6225.me', 
+        'Access-Control-Allow-Methods': 'GET',  
+        'Access-Control-Allow-Headers': 'Content-Type',  
+        'Access-Control-Allow-Credentials': 'true'  
+    }
 
     try:
    
@@ -27,6 +34,7 @@ def lambda_handler(event, context):
 
         return {
             'statusCode': 200,
+            'headers': cors_headers,
             'body': json.dumps({
                 'message': 'Visitor count updated successfully for the main page.',
                 'newVisitorCount': new_count
@@ -36,6 +44,7 @@ def lambda_handler(event, context):
         print(e)
         return {
             'statusCode': 500,
+            'headers': cors_headers,
             'body': json.dumps({'message': 'Error updating visitor count for the main page'})
         }
 
