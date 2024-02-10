@@ -62,7 +62,7 @@ resource "aws_lambda_function" "visitor_counter" {
 }
 
 
-resource "aws_lambda_function_url" "url" {
+resource "aws_lambda_function_url" "lambda_url" {
   function_name      = "visitorCounter"
   authorization_type = "NONE"
 
