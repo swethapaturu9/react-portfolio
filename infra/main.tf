@@ -63,7 +63,7 @@ resource "aws_lambda_function" "visitor_counter" {
 
 
 resource "aws_lambda_function_url" "lambda_url" {
-  function_name      = "visitorCounter"
+  function_name      = aws_lambda_function.visitor_counter.function_name, 
   authorization_type = "NONE"
 
   cors {
