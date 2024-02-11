@@ -1,22 +1,40 @@
-# Portfolio Website
+# Portfolio Website - Cloud Resume Challenge
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![AWS S3](https://img.shields.io/badge/AWS%20S3-569A31?style=for-the-badge&logo=amazons3&logoColor=white)
-![CI/CD](https://img.shields.io/badge/CI%2FCD-Integrated-blue?style=for-the-badge)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
+![AWS Lambda](https://img.shields.io/badge/AWS%20Lambda-FF9900?style=for-the-badge&logo=aws-lambda&logoColor=white)
+![DynamoDB](https://img.shields.io/badge/DynamoDB-4053D6?style=for-the-badge&logo=amazon-dynamodb&logoColor=white)
 [![View My Portfolio](https://img.shields.io/badge/View%20Portfolio-blue?style=for-the-badge)](http://swecsye6225.me)
 
 
 ## Overview
 
-This repository contains the source code for my personal portfolio website. The website is built with React, showcasing my projects, skills, and professional journey. It's deployed as a static website on AWS S3, ensuring high performance and reliability. The project incorporates a Continuous Integration/Continuous Deployment (CI/CD) pipeline, facilitating automatic linting of code on pull requests and direct deployment to S3 on successful merge to the master branch.
+This repository contains the source code for my attempt at the cloud resume challenge by Forrest Brazeal. 
+The website is built with React, showcasing my professional journey. It's deployed as a static website on AWS S3 and distributed globally through Amazon CloudFront, enhancing security and performance with a content delivery network(CDN). 
+The website also features a view counter, which is powered by an AWS Lambda function triggered on each visit, incrementing a count in an Amazon DynamoDB table, thus providing real-time visitor analytics. 
+The website is fully CI/CD integrated, ensuring that both the frontend and infrastructure code are automatically built, tested, and deployed through a robust pipeline upon each commit
+
+
+## Architecture Diagram
+
+![Architecture](https://github.com/swethapaturu9/react-portfolio/blob/master/cloud-resume.drawio.png)
+
+
 
 ## Features
 
 - **React Framework**: The site is built with React, offering a dynamic and responsive user experience.
 - **AWS S3 Hosting**: The website is hosted on Amazon S3, known for its scalability and reliability.
+- **Amazon CloudFront**: Content is distributed through CloudFront, enhancing the site's security and load times globally.
+- **View Counter**:  Features a visitor count functionality implemented with AWS Lambda and DynamoDB to track and display the number of site visits in real-time.
 - **CI/CD Pipeline**: The project utilizes GitHub Actions for Continuous Integration and Continuous Deployment.
   - **Linting**: Ensures code quality by automatically linting code on every pull request to the master branch.
-  - **Deployment**: Automatically deploys the website to AWS S3 upon successful merge to the master branch.
-
+  - **Terraform Validate**: Includes a validation step for Terraform configurations, ensuring that infrastructure changes are vetted for syntax and logical errors before being applied.
+  - **Deployment**: 
+    - **Frontend Deployment**: On a successful merge to the master branch, the static site content is automatically deployed to AWS S3.
+    - **Infrastructure as Code Deployment**: Terraform changes are automatically applied to manage and update the AWS infrastructure
+   
+      
 ## Requirements for S3 Deployment
 
 To deploy the website to AWS S3, ensure you meet the following requirements:
@@ -54,13 +72,3 @@ To set up this project locally, follow these steps:
     ```bash
     npm start
     ```
-
-## CI/CD Pipeline Details
-
-### Continuous Integration (CI)
-
-- **Linting**: Ensures that your code follows best practices and standards. Any pull request or push to the master branch triggers the linting process.
-
-### Continuous Deployment (CD)
-
-- **Deployment to AWS S3**: Upon a successful merge to the master branch, the code is built and deployed to AWS S3, making your latest changes immediately live.
