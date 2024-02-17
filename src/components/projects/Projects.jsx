@@ -44,7 +44,7 @@ const Projects = () => {
 
       {
         id: 5,
-        title: 'Personal Portfolio - Cloud Resume Challenge',
+        title: 'Cloud Resume Challenge - Portfolio',
         description: 'Designed a React-based portfolio, automatically deployed on AWS S3 through CI/CD pipelines using GitHub Actions. Integrated AWS Lambda with DynamoDB to implement a dynamic view counter for tracking user interactions.',
         repoLink: 'https://github.com/swethapaturu9/react-portfolio',
         icons: [<FaAws key="aws-1" />, <SiGithubactions key="githubactions-1" />, <SiTerraform key="terraform-1"/>]
