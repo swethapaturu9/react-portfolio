@@ -41,6 +41,7 @@ jobs:
           aws configure set default.region $AWS_REGION
 
           aws s3 sync ./build s3://$S3_BUCKET/ --delete
+          aws cloudfront create-invalidation --distribution-id E3AO8D8CJA2CMM --paths "/*"
         
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
