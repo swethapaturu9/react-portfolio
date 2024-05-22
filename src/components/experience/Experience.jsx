@@ -20,11 +20,9 @@ const Experience = () => {
                 <h3 className="card__title">Cloud Native Experience</h3>
 
                 <p> <ul>
-                  <li>Leveraged cloud technologies to engineer a Spring Boot-based grading microservice, enhancing grading efficiency by 30% and servicing an estimated 15,000 users.
-                    Utilized RabbitMQ as the messaging queue to ensure reliable message delivery and service communication.
+                  <li> Developed Spring Boot-based grading microservices, reducing manual grading efforts by 40% and servicing an estimated 15,000 users. Utilized RabbitMQ for efficient asynchronous communication between microservices.
                   </li>
-                  <li>Managed three Kubernetes clusters, with two on Google Cloud Platform and one on IBM Cloud, enhancing infrastructure scalability and reliability, leading to a 20% improvement in resource utilization efficiency.</li>
-                  <li>Implemented infrastructure deployment using Terraform on both GCP and IBM Cloud platforms, streamlining setup processes and reducing deployment times by approximately 35%.</li>
+                  <li>Managed Kubernetes deployments across multiple cloud platforms, including OpenShift and GCP, enhancing infrastructure scalability and reliability.</li>
                   <li>My expertise in Kubernetes is further endorsed by my <strong>Certified Kubernetes Application Developer (CKAD) certification</strong>, demonstrating advanced skills in designing and developing applications for Kubernetes - <a href="https://www.credly.com/badges/8d90228d-ed66-4baa-ad20-23b71482ff5c/linked_in?t=rz8e2y" target="_blank" rel="noopener noreferrer">Credential link</a></li>
                 </ul>
                 </p>
@@ -43,8 +41,8 @@ const Experience = () => {
                 <h3 className="card__title">DevOps Experience</h3>
 
                 <ul>
-                  <li>Containerized and pushed Docker images using Jenkins, resulting in a 40% increase in deployment efficiency and a 25% reduction in release cycle time.</li>
-                  <li>Employed Red Hat Advanced Cluster Management (RHACM) for deploying hybrid cloud environments using Helm charts, achieving a 25% faster setup for hybrid configurations and a 30% improvement in cross-environment compatibility.</li>
+                  <li>Executed a POC deploying Spring Boot microservices across multiple cloud platforms with IBM MCM for centralized control.</li>
+                  <li>Established JUnit testing in the Jenkins CI/CD pipeline and integrated JFrog Artifactory for storage of build artifacts.</li>
                   <li>Leveraged ManageIQ for on-demand infrastructure provisioning for developers, boosting development speed by 15% and reducing operational costs by 10%</li>
                 </ul>
 
